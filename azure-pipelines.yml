@@ -24,7 +24,7 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
 
 - task: DotNetCoreCLI@2
-    displayName: 'dotnet publish'
+  displayName: 'dotnet publish'
     inputs:
       command: publish
       publishWebProject: false
@@ -33,4 +33,4 @@ steps:
       zipafterpublish: true
 
 -task: PublishBuildArtifacts@1
-displayName: 'publish artifacts'
+  displayName: 'publish artifacts'
